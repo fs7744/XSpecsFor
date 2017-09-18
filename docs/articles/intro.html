@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>XSpecsFor </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="XSpecsFor ">
+    <meta name="generator" content="docfx 2.22.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc">
+    <meta property="docfx:tocrel" content="toc">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+                <ul class="nav level1 navbar-nav">
+                  <li class="active">
+                    <a href="../articles/intro.html" title="Articles" class="active">Articles</a>
+                  </li>
+                  <li class="">
+                    <a href="../api/index.md" title="Api Documentation" class="">Api Documentation</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+                  
+                  <ul class="nav level1">
+                    <li class="active">
+                      <a href="intro.html" title="Introduction" class="active">Introduction</a>
+                    </li>
+                  </ul>        </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="xspecsfor">XSpecsFor</h1>
+
+<p>Simple BDD test format like SpecsFor for xunit.net</p>
+<h2 id="quick-start">Quick start</h2>
+<h3 id="install-package">Install package</h3>
+<ul>
+<li>Package Manager</li>
+</ul>
+<pre><code>Install-Package XSpecsFor -Version 0.0.1    
+</code></pre><ul>
+<li>.NET CLI</li>
+</ul>
+<pre><code>dotnet add package XSpecsFor --version 0.0.1
+</code></pre><ul>
+<li>Paket CLI</li>
+</ul>
+<pre><code>paket add XSpecsFor --version 0.0.1
+</code></pre><h3 id="simple-use-example">Simple use example</h3>
+<pre><code class="lang-csharp">// custom Setup Common Services
+public class CommonServicesSetuper : ICommonServicesSetuper
+{
+    public void SetUp(ServiceCollection services)
+    {
+        services.AddSingleton(i =&gt;
+        {
+            var mock = new Mock&lt;IConstantInt&gt;();
+            mock.SetupGet(j =&gt; j.ConstantInt).Returns(20);
+            return mock.Object;
+        });
+    }
+}
+
+public interface IAdder
+{
+    int Add(int x, int y);
+}
+
+public interface IConstantInt
+{
+    int ConstantInt { get; }
+}
+
+public class AddTester
+{
+    private IAdder _Adder;
+    private IConstantInt _ConstantInt;
+
+    public int GivenInt = 0;
+
+    public int GiWhenInt = 0;
+
+    public AddTester(IAdder adder, IConstantInt constantInt)
+    {
+        _Adder = adder;
+        _ConstantInt = constantInt;
+    }
+
+    public int Add(int x, int y) =&gt; _Adder.Add(x, y) + GivenInt + GiWhenInt + _ConstantInt.ConstantInt;
+}
+
+public class AddTest : SpecsFor&lt;AddTester&gt;
+{
+    public override void SetUp(IServiceCollection services)
+    {
+        services.AddSingleton(i =&gt;
+        {
+            var mock = new Mock&lt;IAdder&gt;();
+            mock.Setup(j =&gt; j.Add(It.IsAny&lt;int&gt;(), It.IsAny&lt;int&gt;()))
+            .Returns&lt;int, int&gt;((x, y) =&gt; x + y);
+            return mock.Object;
+        });
+    }
+
+    public override void Given()
+    {
+        SUT.GivenInt = 6;
+    }
+
+    public override void When()
+    {
+        SUT.GiWhenInt = 4;
+    }
+
+    [Fact(DisplayName = &quot;4 + 5 + 6 + 4 + 20 = 35&quot;)]
+    public void Add4And5()
+    {
+        Assert.Equal(39, SUT.Add(4, 5));
+    }
+
+    [Fact(DisplayName = &quot;6 + 6 + 6 + 4 + 20 = 42&quot;)]
+    public void Add6And6()
+    {
+        Assert.Equal(42, SUT.Add(6, 6));
+    }
+}
+</code></pre><h3 id="api-doc">api doc</h3>
+<p>All api doc ( include code generate by grpc tool ) please see </p>
+<p><a href="https://fs7744.github.io/XSpecsFor/api/index.html">https://fs7744.github.io/XSpecsFor/api/index.html</a></p>
+<h3 id="contact-to">contact to</h3>
+<p>Email： fs7744@hotmail.com</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

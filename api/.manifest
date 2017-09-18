@@ -1,0 +1,23 @@
+{
+  "XSpecsFor": "XSpecsFor.yml",
+  "XSpecsFor.ICommonServicesSetuper": "XSpecsFor.ICommonServicesSetuper.yml",
+  "XSpecsFor.ICommonServicesSetuper.SetUp(ServiceCollection)": "XSpecsFor.ICommonServicesSetuper.yml",
+  "XSpecsFor.ISpec": "XSpecsFor.ISpec.yml",
+  "XSpecsFor.ISpec.Given": "XSpecsFor.ISpec.yml",
+  "XSpecsFor.ISpec.Provider": "XSpecsFor.ISpec.yml",
+  "XSpecsFor.ISpec.SetUp(IServiceCollection)": "XSpecsFor.ISpec.yml",
+  "XSpecsFor.ISpec.TearDown": "XSpecsFor.ISpec.yml",
+  "XSpecsFor.ISpec.When": "XSpecsFor.ISpec.yml",
+  "XSpecsFor.ISpec`1": "XSpecsFor.ISpec-1.yml",
+  "XSpecsFor.ISpec`1.SUT": "XSpecsFor.ISpec-1.yml",
+  "XSpecsFor.SpecsFor`1": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.#ctor": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.Dispose": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.Dispose(System.Boolean)": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.Given": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.Provider": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.SetUp(IServiceCollection)": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.SUT": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.TearDown": "XSpecsFor.SpecsFor-1.yml",
+  "XSpecsFor.SpecsFor`1.When": "XSpecsFor.SpecsFor-1.yml"
+}

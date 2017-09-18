@@ -1,0 +1,263 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: XSpecsFor
+  name: XSpecsFor
+  href: api/XSpecsFor.html
+  commentId: N:XSpecsFor
+  fullName: XSpecsFor
+  nameWithType: XSpecsFor
+- uid: XSpecsFor.ICommonServicesSetuper
+  name: ICommonServicesSetuper
+  href: api/XSpecsFor.ICommonServicesSetuper.html
+  commentId: T:XSpecsFor.ICommonServicesSetuper
+  fullName: XSpecsFor.ICommonServicesSetuper
+  nameWithType: ICommonServicesSetuper
+- uid: XSpecsFor.ICommonServicesSetuper.SetUp(ServiceCollection)
+  name: SetUp(ServiceCollection)
+  href: api/XSpecsFor.ICommonServicesSetuper.html#XSpecsFor_ICommonServicesSetuper_SetUp_ServiceCollection_
+  commentId: M:XSpecsFor.ICommonServicesSetuper.SetUp(ServiceCollection)
+  fullName: XSpecsFor.ICommonServicesSetuper.SetUp(ServiceCollection)
+  nameWithType: ICommonServicesSetuper.SetUp(ServiceCollection)
+- uid: XSpecsFor.ICommonServicesSetuper.SetUp*
+  name: SetUp
+  href: api/XSpecsFor.ICommonServicesSetuper.html#XSpecsFor_ICommonServicesSetuper_SetUp_
+  commentId: Overload:XSpecsFor.ICommonServicesSetuper.SetUp
+  fullName: XSpecsFor.ICommonServicesSetuper.SetUp
+  nameWithType: ICommonServicesSetuper.SetUp
+- uid: XSpecsFor.ISpec
+  name: ISpec
+  href: api/XSpecsFor.ISpec.html
+  commentId: T:XSpecsFor.ISpec
+  fullName: XSpecsFor.ISpec
+  nameWithType: ISpec
+- uid: XSpecsFor.ISpec.Given
+  name: Given()
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_Given
+  commentId: M:XSpecsFor.ISpec.Given
+  fullName: XSpecsFor.ISpec.Given()
+  nameWithType: ISpec.Given()
+- uid: XSpecsFor.ISpec.Given*
+  name: Given
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_Given_
+  commentId: Overload:XSpecsFor.ISpec.Given
+  fullName: XSpecsFor.ISpec.Given
+  nameWithType: ISpec.Given
+- uid: XSpecsFor.ISpec.Provider
+  name: Provider
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_Provider
+  commentId: P:XSpecsFor.ISpec.Provider
+  fullName: XSpecsFor.ISpec.Provider
+  nameWithType: ISpec.Provider
+- uid: XSpecsFor.ISpec.Provider*
+  name: Provider
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_Provider_
+  commentId: Overload:XSpecsFor.ISpec.Provider
+  fullName: XSpecsFor.ISpec.Provider
+  nameWithType: ISpec.Provider
+- uid: XSpecsFor.ISpec.SetUp(IServiceCollection)
+  name: SetUp(IServiceCollection)
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_SetUp_IServiceCollection_
+  commentId: M:XSpecsFor.ISpec.SetUp(IServiceCollection)
+  fullName: XSpecsFor.ISpec.SetUp(IServiceCollection)
+  nameWithType: ISpec.SetUp(IServiceCollection)
+- uid: XSpecsFor.ISpec.SetUp*
+  name: SetUp
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_SetUp_
+  commentId: Overload:XSpecsFor.ISpec.SetUp
+  fullName: XSpecsFor.ISpec.SetUp
+  nameWithType: ISpec.SetUp
+- uid: XSpecsFor.ISpec.TearDown
+  name: TearDown()
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_TearDown
+  commentId: M:XSpecsFor.ISpec.TearDown
+  fullName: XSpecsFor.ISpec.TearDown()
+  nameWithType: ISpec.TearDown()
+- uid: XSpecsFor.ISpec.TearDown*
+  name: TearDown
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_TearDown_
+  commentId: Overload:XSpecsFor.ISpec.TearDown
+  fullName: XSpecsFor.ISpec.TearDown
+  nameWithType: ISpec.TearDown
+- uid: XSpecsFor.ISpec.When
+  name: When()
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_When
+  commentId: M:XSpecsFor.ISpec.When
+  fullName: XSpecsFor.ISpec.When()
+  nameWithType: ISpec.When()
+- uid: XSpecsFor.ISpec.When*
+  name: When
+  href: api/XSpecsFor.ISpec.html#XSpecsFor_ISpec_When_
+  commentId: Overload:XSpecsFor.ISpec.When
+  fullName: XSpecsFor.ISpec.When
+  nameWithType: ISpec.When
+- uid: XSpecsFor.ISpec`1
+  name: ISpec<T>
+  href: api/XSpecsFor.ISpec-1.html
+  commentId: T:XSpecsFor.ISpec`1
+  name.vb: ISpec(Of T)
+  fullName: XSpecsFor.ISpec<T>
+  fullName.vb: XSpecsFor.ISpec(Of T)
+  nameWithType: ISpec<T>
+  nameWithType.vb: ISpec(Of T)
+- uid: XSpecsFor.ISpec`1.SUT
+  name: SUT
+  href: api/XSpecsFor.ISpec-1.html#XSpecsFor_ISpec_1_SUT
+  commentId: P:XSpecsFor.ISpec`1.SUT
+  fullName: XSpecsFor.ISpec<T>.SUT
+  fullName.vb: XSpecsFor.ISpec(Of T).SUT
+  nameWithType: ISpec<T>.SUT
+  nameWithType.vb: ISpec(Of T).SUT
+- uid: XSpecsFor.ISpec`1.SUT*
+  name: SUT
+  href: api/XSpecsFor.ISpec-1.html#XSpecsFor_ISpec_1_SUT_
+  commentId: Overload:XSpecsFor.ISpec`1.SUT
+  fullName: XSpecsFor.ISpec<T>.SUT
+  fullName.vb: XSpecsFor.ISpec(Of T).SUT
+  nameWithType: ISpec<T>.SUT
+  nameWithType.vb: ISpec(Of T).SUT
+- uid: XSpecsFor.SpecsFor`1
+  name: SpecsFor<T>
+  href: api/XSpecsFor.SpecsFor-1.html
+  commentId: T:XSpecsFor.SpecsFor`1
+  name.vb: SpecsFor(Of T)
+  fullName: XSpecsFor.SpecsFor<T>
+  fullName.vb: XSpecsFor.SpecsFor(Of T)
+  nameWithType: SpecsFor<T>
+  nameWithType.vb: SpecsFor(Of T)
+- uid: XSpecsFor.SpecsFor`1.#ctor
+  name: SpecsFor()
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1__ctor
+  commentId: M:XSpecsFor.SpecsFor`1.#ctor
+  fullName: XSpecsFor.SpecsFor<T>.SpecsFor()
+  fullName.vb: XSpecsFor.SpecsFor(Of T).SpecsFor()
+  nameWithType: SpecsFor<T>.SpecsFor()
+  nameWithType.vb: SpecsFor(Of T).SpecsFor()
+- uid: XSpecsFor.SpecsFor`1.#ctor*
+  name: SpecsFor
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1__ctor_
+  commentId: Overload:XSpecsFor.SpecsFor`1.#ctor
+  fullName: XSpecsFor.SpecsFor<T>.SpecsFor
+  fullName.vb: XSpecsFor.SpecsFor(Of T).SpecsFor
+  nameWithType: SpecsFor<T>.SpecsFor
+  nameWithType.vb: SpecsFor(Of T).SpecsFor
+- uid: XSpecsFor.SpecsFor`1.Dispose
+  name: Dispose()
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_Dispose
+  commentId: M:XSpecsFor.SpecsFor`1.Dispose
+  fullName: XSpecsFor.SpecsFor<T>.Dispose()
+  fullName.vb: XSpecsFor.SpecsFor(Of T).Dispose()
+  nameWithType: SpecsFor<T>.Dispose()
+  nameWithType.vb: SpecsFor(Of T).Dispose()
+- uid: XSpecsFor.SpecsFor`1.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_Dispose_System_Boolean_
+  commentId: M:XSpecsFor.SpecsFor`1.Dispose(System.Boolean)
+  fullName: XSpecsFor.SpecsFor<T>.Dispose(System.Boolean)
+  fullName.vb: XSpecsFor.SpecsFor(Of T).Dispose(System.Boolean)
+  nameWithType: SpecsFor<T>.Dispose(Boolean)
+  nameWithType.vb: SpecsFor(Of T).Dispose(Boolean)
+- uid: XSpecsFor.SpecsFor`1.Dispose*
+  name: Dispose
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_Dispose_
+  commentId: Overload:XSpecsFor.SpecsFor`1.Dispose
+  fullName: XSpecsFor.SpecsFor<T>.Dispose
+  fullName.vb: XSpecsFor.SpecsFor(Of T).Dispose
+  nameWithType: SpecsFor<T>.Dispose
+  nameWithType.vb: SpecsFor(Of T).Dispose
+- uid: XSpecsFor.SpecsFor`1.Given
+  name: Given()
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_Given
+  commentId: M:XSpecsFor.SpecsFor`1.Given
+  fullName: XSpecsFor.SpecsFor<T>.Given()
+  fullName.vb: XSpecsFor.SpecsFor(Of T).Given()
+  nameWithType: SpecsFor<T>.Given()
+  nameWithType.vb: SpecsFor(Of T).Given()
+- uid: XSpecsFor.SpecsFor`1.Given*
+  name: Given
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_Given_
+  commentId: Overload:XSpecsFor.SpecsFor`1.Given
+  fullName: XSpecsFor.SpecsFor<T>.Given
+  fullName.vb: XSpecsFor.SpecsFor(Of T).Given
+  nameWithType: SpecsFor<T>.Given
+  nameWithType.vb: SpecsFor(Of T).Given
+- uid: XSpecsFor.SpecsFor`1.Provider
+  name: Provider
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_Provider
+  commentId: P:XSpecsFor.SpecsFor`1.Provider
+  fullName: XSpecsFor.SpecsFor<T>.Provider
+  fullName.vb: XSpecsFor.SpecsFor(Of T).Provider
+  nameWithType: SpecsFor<T>.Provider
+  nameWithType.vb: SpecsFor(Of T).Provider
+- uid: XSpecsFor.SpecsFor`1.Provider*
+  name: Provider
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_Provider_
+  commentId: Overload:XSpecsFor.SpecsFor`1.Provider
+  fullName: XSpecsFor.SpecsFor<T>.Provider
+  fullName.vb: XSpecsFor.SpecsFor(Of T).Provider
+  nameWithType: SpecsFor<T>.Provider
+  nameWithType.vb: SpecsFor(Of T).Provider
+- uid: XSpecsFor.SpecsFor`1.SetUp(IServiceCollection)
+  name: SetUp(IServiceCollection)
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_SetUp_IServiceCollection_
+  commentId: M:XSpecsFor.SpecsFor`1.SetUp(IServiceCollection)
+  fullName: XSpecsFor.SpecsFor<T>.SetUp(IServiceCollection)
+  fullName.vb: XSpecsFor.SpecsFor(Of T).SetUp(IServiceCollection)
+  nameWithType: SpecsFor<T>.SetUp(IServiceCollection)
+  nameWithType.vb: SpecsFor(Of T).SetUp(IServiceCollection)
+- uid: XSpecsFor.SpecsFor`1.SetUp*
+  name: SetUp
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_SetUp_
+  commentId: Overload:XSpecsFor.SpecsFor`1.SetUp
+  fullName: XSpecsFor.SpecsFor<T>.SetUp
+  fullName.vb: XSpecsFor.SpecsFor(Of T).SetUp
+  nameWithType: SpecsFor<T>.SetUp
+  nameWithType.vb: SpecsFor(Of T).SetUp
+- uid: XSpecsFor.SpecsFor`1.SUT
+  name: SUT
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_SUT
+  commentId: P:XSpecsFor.SpecsFor`1.SUT
+  fullName: XSpecsFor.SpecsFor<T>.SUT
+  fullName.vb: XSpecsFor.SpecsFor(Of T).SUT
+  nameWithType: SpecsFor<T>.SUT
+  nameWithType.vb: SpecsFor(Of T).SUT
+- uid: XSpecsFor.SpecsFor`1.SUT*
+  name: SUT
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_SUT_
+  commentId: Overload:XSpecsFor.SpecsFor`1.SUT
+  fullName: XSpecsFor.SpecsFor<T>.SUT
+  fullName.vb: XSpecsFor.SpecsFor(Of T).SUT
+  nameWithType: SpecsFor<T>.SUT
+  nameWithType.vb: SpecsFor(Of T).SUT
+- uid: XSpecsFor.SpecsFor`1.TearDown
+  name: TearDown()
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_TearDown
+  commentId: M:XSpecsFor.SpecsFor`1.TearDown
+  fullName: XSpecsFor.SpecsFor<T>.TearDown()
+  fullName.vb: XSpecsFor.SpecsFor(Of T).TearDown()
+  nameWithType: SpecsFor<T>.TearDown()
+  nameWithType.vb: SpecsFor(Of T).TearDown()
+- uid: XSpecsFor.SpecsFor`1.TearDown*
+  name: TearDown
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_TearDown_
+  commentId: Overload:XSpecsFor.SpecsFor`1.TearDown
+  fullName: XSpecsFor.SpecsFor<T>.TearDown
+  fullName.vb: XSpecsFor.SpecsFor(Of T).TearDown
+  nameWithType: SpecsFor<T>.TearDown
+  nameWithType.vb: SpecsFor(Of T).TearDown
+- uid: XSpecsFor.SpecsFor`1.When
+  name: When()
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_When
+  commentId: M:XSpecsFor.SpecsFor`1.When
+  fullName: XSpecsFor.SpecsFor<T>.When()
+  fullName.vb: XSpecsFor.SpecsFor(Of T).When()
+  nameWithType: SpecsFor<T>.When()
+  nameWithType.vb: SpecsFor(Of T).When()
+- uid: XSpecsFor.SpecsFor`1.When*
+  name: When
+  href: api/XSpecsFor.SpecsFor-1.html#XSpecsFor_SpecsFor_1_When_
+  commentId: Overload:XSpecsFor.SpecsFor`1.When
+  fullName: XSpecsFor.SpecsFor<T>.When
+  fullName.vb: XSpecsFor.SpecsFor(Of T).When
+  nameWithType: SpecsFor<T>.When
+  nameWithType.vb: SpecsFor(Of T).When
